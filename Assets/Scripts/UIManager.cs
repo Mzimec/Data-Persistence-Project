@@ -24,11 +24,12 @@ public class UIManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+        
     }
 
     public void SetName()
     {
-        DataManager.instance.playerName = playerNameInput.text.ToString();
+        DataManager.instance.playerName = playerNameInput.text;
     }
 
     public void ExitGame()
